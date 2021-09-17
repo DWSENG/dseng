@@ -7,22 +7,22 @@ Web application built to support the school of engineering's Software program wi
 ### 🚀 ROADMAP
 
 ## v0.1.0 - auth
-- [] landing page with prompt to login
-  - [] login via dunwoody email
-- [] / page
-  - [] view profile info
-  - [] edit / update profile info
-  - [] logout
+- [ ] landing page with prompt to login
+  - [ ] login via dunwoody email
+- [ ] / page
+  - [ ] view profile info
+  - [ ] edit / update profile info
+  - [ ] logout
 
 ## v0.2.0 - courses
-- [] /courses page
-  - [] view all courses
-  - [] create course
-    - [] /courses/new
-  - [] search for course
-  - [] filter courses
-- [] /courses/[id] page
-  - [] edit course
-    - [] /courses/[id]/edit
-  - [] delete course
+- [ ] /courses page
+  - [ ] view all courses
+  - [ ] create course
+    - [ ] /courses/new
+  - [ ] search for course
+  - [ ] filter courses
+- [ ] /courses/[id] page
+  - [ ] edit course
+    - [ ] /courses/[id]/edit
+  - [ ] delete course
 
