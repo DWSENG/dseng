@@ -4,7 +4,7 @@
 
 Web application built to support the school of engineering's Software program with student advising and academic planning
 
-### 🚀 ROADMAP
+# 🚀 ROADMAP
 
 ## v0.1.0 - auth
 - [ ] landing page with prompt to login
