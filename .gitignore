@@ -1,2 +1,5 @@
 terraform/.vagrant
 terraform/ubuntu*
+
+node_modules
+.next
