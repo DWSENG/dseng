@@ -1,21 +1,23 @@
-import { useSession, signIn, signOut } from 'next-auth/client'
+import { useSession, getSession, signIn, signOut } from 'next-auth/client'
+import Landing from '@components/Landing'
+import Layout from '@components/Layout'
 
-export default function App() {
-  const [session] = useSession()
+export async function getServerSideProps({ params, req, res }) {
+  const session = await getSession({ req })
 
+  return {
+    props: { session: session && session },
+  }
+}
+
+export default function App({ session }) {
   return session ? (
-    <div className="grid place-items-center h-screen">
-      <div className="flex flex-col">
-        Signed in as {session.user.name}
-        <button onClick={signOut}>Sign out</button>
-      </div>
-    </div>
+    <Layout>
+      <section className="flex flex-col items-center justify-center h-screen">
+        <h1 className="text-gray-900">signed in as {session.user.name}</h1>
+      </section>
+    </Layout>
   ) : (
-    <div className="grid place-items-center h-screen">
-      <div className="flex flex-col">
-        Not signed in <br />
-        <button onClick={() => signIn('github')}>Sign in</button>
-      </div>
-    </div>
+    <Landing />
   )
 }
