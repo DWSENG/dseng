@@ -1,0 +1,22 @@
+{
+  "name": "dseng",
+  "version": "0.1.0",
+  "description": "dunwoody software enineering",
+  "main": "pages/index.jsx",
+  "author": "david magnuson",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.5",
+    "postcss": "^8.3.7",
+    "tailwindcss": "^2.2.15"
+  }
+}
