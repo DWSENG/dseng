@@ -3,3 +3,4 @@ terraform/ubuntu*
 
 node_modules
 .next
+.env
