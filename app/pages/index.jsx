@@ -6,7 +6,7 @@ export default function App({ session }) {
   return session ? (
     <Layout>
       <section className="flex flex-col items-center justify-center h-screen">
-        <h1 className="text-gray-900">signed in as {session.user.name}</h1>
+        <h1 className="text-gray-900">signed in as {session?.user.name}</h1>
       </section>
     </Layout>
   ) : (
