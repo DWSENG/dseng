@@ -1,4 +1,4 @@
-import { signIn } from 'next-auth/client'
+// import { signIn } from 'next-auth/client'
 
 export default function Landing() {
   return (
@@ -8,7 +8,7 @@ export default function Landing() {
       </p>
       <button
         className="text-gray-900 hover:shadow-white hover:text-red-800 font-bold transition bg-gray-100 rounded-xl py-2 px-4"
-        onClick={() => signIn('github')}
+        // onClick={() => signIn('github')}
       >
         sign in
       </button>
