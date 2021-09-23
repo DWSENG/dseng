@@ -1,7 +1,7 @@
 import { signOut } from 'next-auth/client'
 import { LogoutIcon } from '@heroicons/react/solid'
 
-import Nav from '@components/Layout/Nav'
+import Nav from './Nav'
 
 export default function Layout({ children }) {
   return (
