@@ -2,14 +2,6 @@ import { useSession, getSession, signIn, signOut } from 'next-auth/client'
 import Landing from '@components/Landing'
 import Layout from '@components/Layout'
 
-export async function getServerSideProps({ params, req, res }) {
-  const session = await getSession({ req })
-
-  return {
-    props: { session: session && session },
-  }
-}
-
 export default function App({ session }) {
   return session ? (
     <Layout>
@@ -20,4 +12,12 @@ export default function App({ session }) {
   ) : (
     <Landing />
   )
+}
+
+export async function getServerSideProps({ params, req, res }) {
+  const session = await getSession({ req })
+
+  return {
+    props: { session: session ? session : null },
+  }
 }
